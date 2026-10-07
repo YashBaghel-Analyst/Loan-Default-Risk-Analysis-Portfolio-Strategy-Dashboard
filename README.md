@@ -31,5 +31,25 @@ To operationalize data-driven insights into a continuous monitoring tool. The da
 * **Income vs. Credit Score Matrix:** Highlights the critical finding that absolute income bandwidth outweighs historical credit scores, with "Low" income borrowers defaulting at high rates regardless of their credit tier.
 * **Co-Signer Risk Buffer:** Visualizes the protective impact of co-signers, showing a drop in average default rates from 12.87% (unbacked) to 10.36% (backed).
 * **Employment & Loan Purpose:** Tracks the outsized default risk presented by unemployed and part-time applicants across all loan products (Auto, Business, Education, Home).
+
+* 6. How to Navigate This Project (For Recruiters & Non-Technical Viewers)
+If you are reviewing this portfolio and do not have analytical software installed, you can still easily explore the full project directly in your browser:
+
+Read the Business Case: Click on Loan Defaults Report.pdf to read the complete executive summary, data findings, and strategic business recommendations.
+
+View the Dashboard: You do not need Power BI to see the final dashboard. Click on Page_1_dashboard.PNG and Page_2_dashboard.PNG to view high-resolution screenshots of the final interactive tool.
+
+Explore the Code: Click on Loan_Default_EDA.ipynb to view the Python code, statistical breakdowns, and charts used to test the business hypotheses. GitHub will render this file directly in your browser.
+
+Interact with the Dashboard (Technical Users): If you have Power BI Desktop installed, download the Loan_Defaults_Dashboard.pbix file to click through the interactive filters and explore the data model yourself.
+
+8. Contact
+If you have any questions about this project or would like to discuss data and product analytics opportunities, feel free to reach out.
+
+Yash Baghel
+
+LinkedIn:[ (https://www.linkedin.com/in/yash-baghel-linkdin/?isSelfProfile=true)](https://www.linkedin.com/in/yash-baghel-linkdin/?isSelfProfile=true)
+
+Email: yashbaghel47z@gmail.com
 * **DTI Quintile Trends:** Demonstrates the linear escalation of default risk as borrowers move from the lowest 20% to the highest 20% Debt-to-Income quintiles.
 * **Global Filter Panel:** Synchronized slicers for Education, HasCoSigner, and Income Band to allow deep-dive segmentation across the entire report.
