@@ -1,45 +1,37 @@
-# Loan-Defaults-Dashboard
-
+Loan Default Risk Analysis & Portfolio Strategy Dashboard
 
 ### 1. Project Title 
-**Credit Risk Insights: Loan Default Analysis Dashboard**
-An interactive Power BI dashboard designed to uncover key drivers of loan defaults across a large customer base—focusing on risk segmentation, borrower behavior, and strategic decision-making for financial institutions.
+**Loan Default Risk Analysis & Portfolio Strategy Dashboard**
+An executive-level Power BI and Python analytics suite designed to uncover the true predictive drivers of loan defaults—moving beyond raw credit scores to evaluate multidimensional risk across income bandwidth, employment stability, and financial leverage.
 
 ### 2. Short Description 
-The Loan Default Analysis Dashboard provides a data-driven approach to understanding and reducing loan default risks. Built using Power BI, SQL, and DAX, it helps banks, lenders, and financial analysts identify risky borrower segments and optimize lending strategies.
+This project provides a robust, data-driven framework for minimizing loan default risks. By leveraging Python for rigorous Exploratory Data Analysis (EDA) and Power BI for interactive portfolio monitoring, the dashboard equips risk managers and product strategists to identify toxic borrower cohorts, adjust approval matrices, and optimize credit policies.
 
 ### 3. Tech Stack
-The dashboard was built using the following tools and technologies:
-* 📊 **Power BI Desktop** – Used to create dynamic visuals, KPIs, and interactive filters.
-* [cite_start]🧠 **DAX (Data Analysis Expressions)** – Used for calculated fields, Default Rate measures, Repayment Rate, and dynamic risk bands.
-* 🧹 **Power Query** – Performed data transformation, type conversion, and cleansing.
-* 🐍 **Python** – Performed EDA, 5-Number summary, and correlation analysis.
-* [cite_start]⚡ **DirectQuery Mode** – Implemented incremental refresh for near real-time analytics and portfolio monitoring.
-* 📄 **File Format** – `.pbix` for development and `.png` for report previews.
+The project was built using the following tools and technologies:
+* 🐍 **Python (Jupyter Notebook, Pandas, Seaborn, Matplotlib)** – Executed comprehensive EDA, statistical profiling, univariate/bivariate analysis, feature engineering (DTI quintiles, custom bins), and visual hypothesis testing on a pristine dataset.
+* 📊 **Power BI Desktop** – Designed the interactive tracking dashboard with a clean, executive UI, dynamic visuals, and synchronized slicers.
+* 🧠 **DAX (Data Analysis Expressions)** – Engineered calculated measures for core KPIs (e.g., Overall Default Rate) and dynamic categorical grouping via `SWITCH` statements (e.g., Income Bands, Credit Score Bands).
+* 📄 **File Format** – `.ipynb` for analytical methodology, `.pbix` for dashboard development, and `.png` for repository previews.
 
 ### 4. Data Source
-**Source:** Internal Bank Loan Data (synthetic for privacy)
-* [cite_start]Analyzed 255K+ loan records to identify high-risk borrowers.
-* **Attributes included:** Credit score, debt-to-income ratio (DTI), co-signer status, employment length, loan type, interest rate, and default status.
+**Source:** Historical Bank Loan Data
+* Analyzed a fully populated dataset of 255,347 loan applications.
+* **Attributes included:** 19 distinct features ranging from continuous financial metrics (Income, Loan Amount, Interest Rate, DTI Ratio) to categorical borrower traits (Employment Type, Loan Purpose, Co-Signer Status).
 * **Time period:** 2013-2018.
-* Includes default history and repayment timelines.
 
 ### 5. Features / Highlights
 
-* **Business Problem**
-Banks and financial institutions struggle to minimize default rates while expanding credit access. Understanding what factors contribute most to defaults—especially across different borrower profiles—is critical to manage risk effectively.
+**Business Problem**
+The institution faces a baseline loan default rate of 11.61%. Relying on traditional, one-dimensional metrics like raw credit scores creates evaluation blind spots, leading to capital erosion through non-performing assets. A holistic, multidimensional framework is required to understand how compounding factors like low income, debt leverage, and employment type interact to elevate risk.
 
-* **Goal of the dashboard**
-To create a decision-support tool that identifies high-risk borrower segments, highlights key indicators contributing to loan defaults, supports strategy planning around credit risk (co-signer policies, interest rates), and enables risk mitigation through interactive segmentation.
+**Goal of the Dashboard**
+To operationalize data-driven insights into a continuous monitoring tool. The dashboard empowers decision-makers to track portfolio health, isolate structural risks, and implement targeted credit policies—such as capping DTI limits or introducing dynamic co-signer requirements for high-risk profiles.
 
-* **Walk through of key visuals (briefly!)**
-  * **Key Metrics (KPI Cards):** Displays Total Applications (255,000+), Overall Default Rate, High-Risk Segments (e.g., DTI > 40%, no co-signer), and Average Interest Rate and Loan Amount.
-  * **Default Rate by DTI Range (Bar Chart):** Visualizes how higher debt-to-income ratios correlate with increased default likelihood.
-  * **Impact of Co-signers (Stacked Bar Chart):** Highlights how having a co-signer reduces default probability—especially in high-risk DTI segments.
-  * **Loan Type vs. Default Status (Matrix Table):** Compares default rates across personal, home, auto, and student loans.
-  * **Customer Profile Filter Panel:** Slicers for filtering by employment length, income range, and education level.
-
-* **Business Impact & Insights**
-  * [cite_start]**Employment & Loan Purpose Risk:** Discovered a 14%+ default rate among unemployed individuals taking out business loans.
-  * [cite_start]**Safest Asset Classes:** Identified that home loans showed the highest repayment success rate across the portfolio at 89.7%.
-  * [cite_start]**Segment Performance Tracking:** Built dynamic dashboards to track repayment success and segment performance by employment type and loan purpose.
+**Walkthrough of Key Visuals**
+* **Executive KPI Ribbon:** A unified header tracking vital portfolio health metrics: Default Rate (11.61%), Total Defaults (30K), Average Credit Score (559), Average Loan ($144.52K), and Average DTI Ratio (0.51).
+* **Income vs. Credit Score Matrix:** Highlights the critical finding that absolute income bandwidth outweighs historical credit scores, with "Low" income borrowers defaulting at high rates regardless of their credit tier.
+* **Co-Signer Risk Buffer:** Visualizes the protective impact of co-signers, showing a drop in average default rates from 12.87% (unbacked) to 10.36% (backed).
+* **Employment & Loan Purpose:** Tracks the outsized default risk presented by unemployed and part-time applicants across all loan products (Auto, Business, Education, Home).
+* **DTI Quintile Trends:** Demonstrates the linear escalation of default risk as borrowers move from the lowest 20% to the highest 20% Debt-to-Income quintiles.
+* **Global Filter Panel:** Synchronized slicers for Education, HasCoSigner, and Income Band to allow deep-dive segmentation across the entire report.
