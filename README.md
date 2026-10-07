@@ -32,7 +32,7 @@ To operationalize data-driven insights into a continuous monitoring tool. The da
 * **Co-Signer Risk Buffer:** Visualizes the protective impact of co-signers, showing a drop in average default rates from 12.87% (unbacked) to 10.36% (backed).
 * **Employment & Loan Purpose:** Tracks the outsized default risk presented by unemployed and part-time applicants across all loan products (Auto, Business, Education, Home).
 
-* 6. How to Navigate This Project (For Recruiters & Non-Technical Viewers)
+** 6. How to Navigate This Project (For Recruiters & Non-Technical Viewers)
 If you are reviewing this portfolio and do not have analytical software installed, you can still easily explore the full project directly in your browser:
 
 Read the Business Case: Click on Loan Defaults Report.pdf to read the complete executive summary, data findings, and strategic business recommendations.
@@ -43,7 +43,7 @@ Explore the Code: Click on Loan_Default_EDA.ipynb to view the Python code, stati
 
 Interact with the Dashboard (Technical Users): If you have Power BI Desktop installed, download the Loan_Defaults_Dashboard.pbix file to click through the interactive filters and explore the data model yourself.
 
-8. Contact
+** 8. Contact
 If you have any questions about this project or would like to discuss data and product analytics opportunities, feel free to reach out.
 
 Yash Baghel
