@@ -1,5 +1,3 @@
-Loan Default Risk Analysis & Portfolio Strategy Dashboard
-
 ### 1. Project Title 
 **Loan Default Risk Analysis & Portfolio Strategy Dashboard**
 An executive-level Power BI and Python analytics suite designed to uncover the true predictive drivers of loan defaults—moving beyond raw credit scores to evaluate multidimensional risk across income bandwidth, employment stability, and financial leverage.
