@@ -52,5 +52,5 @@ LinkedIn:[ (https://www.linkedin.com/in/yash-baghel-linkdin/?isSelfProfile=true)
 
 Email: yashbaghel47z@gmail.com
 
-* **DTI Quintile Trends:** Demonstrates the linear escalation of default risk as borrowers move from the lowest 20% to the highest 20% Debt-to-Income quintiles.
-* **Global Filter Panel:** Synchronized slicers for Education, HasCoSigner, and Income Band to allow deep-dive segmentation across the entire repo
+
+
